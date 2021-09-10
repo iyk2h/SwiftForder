@@ -72,6 +72,9 @@
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
                                     </preferredSymbolConfiguration>
                                 </state>
+                                <connections>
+                                    <segue destination="T91-Db-fVM" kind="presentation" id="oyr-wx-vOC"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iAk-Yz-fe3">
                                 <rect key="frame" x="64" y="196.5" width="21" height="21"/>
@@ -117,18 +120,73 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="maximumValueLabel" destination="jyp-P8-Xfc" id="J0u-Yc-Iog"/>
+                        <outlet property="minimumValueLabel" destination="iAk-Yz-fe3" id="hao-bA-qcA"/>
                         <outlet property="slider" destination="XGo-WX-YrM" id="3en-sR-8aj"/>
+                        <outlet property="sliderValueLabel" destination="qgN-CL-l46" id="kM6-T4-P0B"/>
+                        <outlet property="tryCountLabel" destination="LJ0-Dg-dJQ" id="wpE-1e-t5r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-42.1875" y="60.869565217391312"/>
+            <point key="canvasLocation" x="-282" y="-203"/>
+        </scene>
+        <!--Creadit View Controller-->
+        <scene sceneID="MJR-VR-46v">
+            <objects>
+                <viewController id="T91-Db-fVM" customClass="CreaditViewController" customModule="UpDownGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZEH-in-lO7">
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="97B-LQ-eaK">
+                                <rect key="frame" x="144" y="30" width="608" height="333"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <mutableString key="text">임영균 만듬 - Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6K-84-pMo">
+                                <rect key="frame" x="73" y="20" width="31" height="28"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" image="xmark.octagon" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" scale="large">
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                    </preferredSymbolConfiguration>
+                                </state>
+                                <connections>
+                                    <action selector="touchUpDismissButton:" destination="T91-Db-fVM" eventType="touchUpInside" id="w9r-ad-8Ea"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ru3-IB-q80"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ru3-IB-q80" firstAttribute="bottom" secondItem="97B-LQ-eaK" secondAttribute="bottom" constant="30" id="1HV-re-adG"/>
+                            <constraint firstItem="97B-LQ-eaK" firstAttribute="centerX" secondItem="ZEH-in-lO7" secondAttribute="centerX" id="BDN-1c-8wV"/>
+                            <constraint firstItem="v6K-84-pMo" firstAttribute="top" secondItem="ru3-IB-q80" secondAttribute="top" constant="20" id="Lar-bo-QUD"/>
+                            <constraint firstItem="ru3-IB-q80" firstAttribute="trailing" secondItem="97B-LQ-eaK" secondAttribute="trailing" constant="100" id="SN3-BL-u2Z"/>
+                            <constraint firstItem="v6K-84-pMo" firstAttribute="leading" secondItem="ru3-IB-q80" secondAttribute="leading" constant="29" id="aXp-Iq-mug"/>
+                            <constraint firstItem="97B-LQ-eaK" firstAttribute="top" secondItem="ru3-IB-q80" secondAttribute="top" constant="30" id="eqq-Gt-KrK"/>
+                            <constraint firstItem="v6K-84-pMo" firstAttribute="top" secondItem="ru3-IB-q80" secondAttribute="top" constant="20" id="lv4-rA-DVt"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vyr-SP-eHx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="377.67857142857139" y="-204.34782608695653"/>
         </scene>
     </scenes>
     <resources>
         <image name="checkmark.seal" catalog="system" width="128" height="128"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
         <image name="memories" catalog="system" width="128" height="110"/>
+        <image name="xmark.octagon" catalog="system" width="128" height="112"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

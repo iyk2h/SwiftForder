@@ -13,6 +13,7 @@
 		846FC294265A2A85009F0EEF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846FC292265A2A85009F0EEF /* Main.storyboard */; };
 		846FC296265A2A85009F0EEF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846FC295265A2A85009F0EEF /* Assets.xcassets */; };
 		846FC299265A2A85009F0EEF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846FC297265A2A85009F0EEF /* LaunchScreen.storyboard */; };
+		846FC2A4265A7F3A009F0EEF /* CreaditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846FC2A3265A7F3A009F0EEF /* CreaditViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		846FC295265A2A85009F0EEF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		846FC298265A2A85009F0EEF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		846FC29A265A2A85009F0EEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		846FC2A3265A7F3A009F0EEF /* CreaditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreaditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		846FC280265A2A85009F0EEF = {
 			isa = PBXGroup;
 			children = (
+				846FC2A3265A7F3A009F0EEF /* CreaditViewController.swift */,
 				846FC28B265A2A85009F0EEF /* UpDownGame */,
 				846FC28A265A2A85009F0EEF /* Products */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				846FC291265A2A85009F0EEF /* ViewController.swift in Sources */,
+				846FC2A4265A7F3A009F0EEF /* CreaditViewController.swift in Sources */,
 				846FC28D265A2A85009F0EEF /* AppDelegate.swift in Sources */,
 				846FC28F265A2A85009F0EEF /* SceneDelegate.swift in Sources */,
 			);
@@ -287,6 +291,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RA8B7UH4J2;
 				INFOPLIST_FILE = UpDownGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -305,6 +310,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RA8B7UH4J2;
 				INFOPLIST_FILE = UpDownGame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
